@@ -8,7 +8,11 @@ elif random_choice == 1:
   choice_computer = 'paper'
 else:
   choice_computer = 'scissor' 
-user_choice = input('rock, paper or scissors? ')
+user_choice = ''
+while (user_choice != 'rock' and
+      user_choice != 'paper' and
+      user_choice != 'scissors'):
+  user_choice = input('rock, paper or scissors? ')  
 if choice_computer == user_choice:
   winner = 'Tie'
 elif choice_computer == 'paper' and user_choice == 'rock':
