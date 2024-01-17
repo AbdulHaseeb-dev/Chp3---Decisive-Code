@@ -57,3 +57,15 @@ elif int(number_of_scoops) >= 3:
   print("Wow, that's a lot of scoops!")
 else:
   print("I'm sorry I can't give you negative scoops.")
+
+#guessing the color game
+color = 'blue'
+guess = ''
+guesses = 0
+while guess != color:
+  guess = input('What color am I thinking of? ')
+guesses = guesses + 1
+if guesses == 1:
+  print('You got it! It took you 1 guess')
+else:
+  print('You got it! It took you', guesses, 'guesses')
